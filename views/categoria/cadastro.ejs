@@ -1,0 +1,31 @@
+<%- include('../partials/header.ejs')  %>
+
+<title>CADASTRO DE CATEGORIAS - LIBRI</title>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <%- include('../partials/menu.ejs') %>
+
+        <div class="card mt-2 ">
+            <div class="card-header">CADASTRO DE CATEGORIAS</div>
+        </div>
+
+        <div class="card-body">
+            <form action="http://localhost:3001/cadastroCategoria" method="post">
+                
+                <label for="">CATEGORIA</label>
+                <input type="text" class="form-control" 
+                        name="nomeCategoria" id="nomeCategoria"
+                        placeholder="DIGITE UMA CATEGORIA">
+                
+                <button class= "btn btn-primary mt-2">CADASTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    </body>
+
+<%- include('../partials/footer.ejs')  %>
